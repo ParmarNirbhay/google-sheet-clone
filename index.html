@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Sheet Clone</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- table heading row  -->
+    <table id="my-table">
+        <thead>
+            <h1 id="currentCell">No Cell Selected</h1>
+            
+            <!-- style button  -->
+            <div class="buttons">
+                <button id="button-bold">B</button>
+                <button id="button-underline">U</button>
+                <button id="button-italic">I</button>
+
+                <!-- align button  -->
+                <button id="left-align">Left</button>
+                <button id="center-align">Center</button>
+                <button id="right-align">Right</button>
+                <button id="justify-align">Justify</button>
+
+                <!-- font size -->
+                <select id="font-size">
+                    <option value="12px">12</option>
+                    <option value="16px">16</option>
+                    <option value="18px">18</option>
+                    <option value="20px">20</option>
+                    <option value="24px">24</option>
+                </select>
+
+                <!-- font family -->
+                <select id="font-family">
+                    <option value="serif">serif</option>
+                    <option value="sans-serif">sans-serif</option>
+                    <option value="cursive">cursive</option>
+                </select>
+
+                <button id="cut-button">Cut</button>
+                <button id="paste-button">Paste</button>
+                <button id="copy-button">Copy</button>
+                <label for="bg-color">Background Color: </label><input type="color" name="" id="bg-color">
+                <label for="text-color">Text Color: </label><input type="color" name="" id="text-color">
+
+                <button id="download">Download</button>
+
+            </div>
+
+            
+            <br><br>
+            <tr id="table-heading-row">
+               <th></th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
